@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="300" prefWidth="400" style="-fx-background-color: linear-gradient(to bottom, #004080, #0066cc);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Username field with icon -->
+        
+    <!-- Center container -->
+    <VBox alignment="CENTER" layoutX="50" layoutY="40" prefHeight="223.0" prefWidth="300" spacing="15">
+
+        <!-- Title -->
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="LOGIN" textFill="white" />
+
+        <!-- Username -->
+        <!--<!-<TextField fx:id="usernameField" prefHeight="31.0" prefWidth="300.0" promptText="Username" style="-fx-pref-width: 250; -fx-background-radius: 5;" />-->
+        
+        <HBox alignment="CENTER_LEFT" spacing="5" style="-fx-background-color: white; -fx-background-radius: 5; -fx-padding: 2;">
+            <ImageView fitHeight="18" fitWidth="18">
+                <image>
+                    <Image url="@usernamelogo.png" />
+                </image>
+            </ImageView>
+            <TextField fx:id="usernameField" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-pref-width: 220;" />
+        </HBox>
+  
+        <HBox alignment="CENTER_LEFT" spacing="5" style="-fx-background-color: white; -fx-background-radius: 5; -fx-padding: 2;">
+            <ImageView fitHeight="18" fitWidth="18">
+                <image>
+                    <Image url="@userpasswordlogo.png" />
+                </image>
+            </ImageView>
+            <TextField fx:id="passwordField" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-pref-width: 220;" />
+        </HBox>
+        <!-- Login Button -->
+        <Button fx:id="loginBtn" prefHeight="35" prefWidth="301.0" style="-fx-background-color: #00bcd4; -fx-text-fill: white; -fx-background-radius: 5; -fx-font-weight: bold;" text="LOGIN" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <CheckBox mnemonicParsing="false" prefHeight="23.0" prefWidth="241.0" text="Remember Me" textFill="#fffefe" />
+             
+             <!-- Forgot Password -->
+                 <Hyperlink alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="300.0" style="-fx-font-size: 12px;" text="Forgot Password?" textFill="white" />
+         </children>
+      </HBox>
+
+    </VBox>
+   <Text fill="#f8f5f5" layoutX="101.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?  Sign Up">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+</AnchorPane>
